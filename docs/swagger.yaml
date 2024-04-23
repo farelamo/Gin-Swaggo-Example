@@ -1,0 +1,94 @@
+definitions:
+  web.RequestBody:
+    properties:
+      name:
+        type: string
+    required:
+    - name
+    type: object
+  web.response:
+    properties:
+      code:
+        type: integer
+      data: {}
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+info:
+  contact:
+    email: support@swagger.io
+    name: HELLO Support
+    url: http://www.swagger.io/support
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+paths:
+  /body/:
+    post:
+      consumes:
+      - application/json
+      description: Try with body here
+      parameters:
+      - description: Request Body
+        in: body
+        name: category
+        required: true
+        schema:
+          $ref: '#/definitions/web.RequestBody'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.response'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/web.response'
+      summary: Experience with body
+      tags:
+      - Body
+  /params/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Try with params here
+      parameters:
+      - description: ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.response'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/web.response'
+      summary: Experience with params
+      tags:
+      - Params
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: get ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.response'
+      summary: Do a ping
+      tags:
+      - Ping
+swagger: "2.0"
