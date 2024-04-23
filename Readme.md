@@ -9,19 +9,23 @@ This is my learning about using swagger with **Gin Framework and Go 1.19 version
     ```
 
 2. Then, You can init the swagger docs, use it from environment variables or use alias
- - Use Env
-    ```
-    $HOME/go/bin/swag init
-    ```
- - Use Alias (After run this, you can simply call like : swag init)
-    ```
-    alias swag="$HOME/go/bin/swag"
-    ```
+ - For Linux
+    - Use Env
+        ```
+        $HOME/go/bin/swag init
+        ```
+    - Use Alias (After run this, you can simply call like : swag init)
+        ```
+        alias swag="$HOME/go/bin/swag"
+        ```
+ - For Windows 
+    For windows you can simply add to environment variables (search on internet if you have any problem) :D
+
 3. get all dependencies required
     ```
     go mod tidy
     ```
-4. Run the project !
+4. 🚀 Run the project !
     ```
     go run .
     ```
@@ -36,7 +40,7 @@ This is my learning about using swagger with **Gin Framework and Go 1.19 version
     ```
     go get github.com/go-openapi/spec@v0.20.11
     ```
-8. Try Run Again !
+8. 🚀 Try Run Again !
     ```
     go run .
     ```
