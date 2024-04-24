@@ -1,6 +1,6 @@
 # Gin Golang + Swagger Example
 
-This is my learning about using swagger with **Gin Framework and Go 1.19 version also my linux fedora system** for automatically render API Documentation. According to the swagger website official, It's only need use **Annotation** on directive comments and structs of golang type for live changes. I was try and learn this because one of most popular API Documentation, **POSTMAN** need to get charges for enterprise use month/person about $14-$20. For any further information, we can visit the documentation of go swagger in https://github.com/go-swagger/go-swagger
+This is my learning about using Swagger with **the Gin Framework and Go 1.19 version, as well as my Linux Fedora system** to automatically generate API documentation. According to the official Swagger website, it's only necessary to use **annotation** on directive comments and structs of Golang type for live changes. I was trying to learn this because one of the most popular API documentation tools, **POSTMAN** requires enterprise users to pay between $14 and $20 per month. For any further information, we can visit the documentation of Go Swagger at https://github.com/go-swagger/go-swagger
 
 # Overview
  ## 1. First Page
@@ -43,7 +43,7 @@ This is my learning about using swagger with **Gin Framework and Go 1.19 version
     ```
     localhost:3000/swagger/index.html
     ```
-6. If you have problem after running ***go run .***, Well you're not alone. Its because of the openapi library I use is compatible with go 1.19 version as well as in description. If you are higher, than u need to follow next step. (6 and 7 step is version that compatible with my go version, to search what compatible with yours, go to the github.com/go-openapi/swag and search which the tags and release date you want)
+6. If you have problems after running ***go run .***, Well you're not alone. Its because of the openapi library I use is compatible with go 1.19 version as well as in description. If you are higher, then you need to follow next step. (6 and 7 step is version that compatible with my go version, to search what compatible with yours, go to the github.com/go-openapi/swag and search which the tags and release date you want)
 
 7. Go-OpenAPI/Swag install
     ```
